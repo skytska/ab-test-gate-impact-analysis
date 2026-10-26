@@ -21,15 +21,24 @@ Does moving the first game gate from **level 30 to level 40** affect **user rete
 
 **Hypotheses:**
 
-**Retention (core KPI)**
+**Primary KPI: Day 7 Retention (`retention_7`)**
 
-* H0: retention_1 and retention_7 are equal between groups
-* H1: there is a **statistically significant difference**
+- H0: Day 7 retention is equal between the control (`gate_30`) and test (`gate_40`) groups.
+- H1: Day 7 retention differs between the control (`gate_30`) and test (`gate_40`) groups.
 
-**Engagement (secondary KPI)**
+**Secondary KPIs**
 
-* H0: sum_gamerounds is equal between groups
-* H1: there is a difference
+**1. Day 1 Retention (`retention_1`)**
+- H0: Day 1 retention is equal between the control and test groups.
+- H1: Day 1 retention differs between the control and test groups.
+
+**2. Average Gamerounds (`sum_gamerounds`)**
+- H0: The mean number of gamerounds is equal between the control and test groups.
+- H1: The mean number of gamerounds differs between the control and test groups.
+
+**Statistical significance level:** α = 0.05.
+
+Day 7 retention is treated as the primary KPI for this portfolio analysis. Day 1 retention and average gamerounds are secondary KPIs used to provide additional context on short-term retention and user engagement.
 
 ---
 
@@ -42,8 +51,8 @@ A later gate may increase **short-term engagement** by allowing uninterrupted ga
 ### Scope of Analysis
 
 * Compare **control (gate_30)** and **test (gate_40)** groups
-* Evaluate **retention (Day 1 and Day 7)** and **engagement (gamerounds)**
-* Apply **statistical testing** to validate observed differences
+* Evaluate **Day 7 Retention (`retention_7`) as the primary KPI**, with Day 1 Retention (`retention_1`) and Average Gamerounds (`sum_gamerounds`) as secondary KPIs
+* Apply statistical testing to validate observed differences between the control and test groups
 * Quantify **effect size and business impact**
 * Build a **Tableau dashboard** for result communication
 
@@ -104,7 +113,7 @@ Click the [Tableau Public dashboard](https://surl.lu/qicavv) to explore **intera
 
 ### Business Impact
 
-> The analysis reveals a **negative impact of moving the gate to level 40 on user retention**, with **no improvement in engagement**.
+> The analysis found **a statistically significant decrease in Day 7 retention when the gate was moved from level 30 to level 40**. No statistically significant differences were detected in Day 1 retention or average gamerounds.
 
 ---
 
@@ -119,15 +128,16 @@ Click the [Tableau Public dashboard](https://surl.lu/qicavv) to explore **intera
 
 ### Strategic Interpretation
 
-Delaying the first progression barrier reduces **long-term retention** without generating additional engagement. This suggests that **early progression structure** plays a critical role in maintaining player motivation and return behavior.
+The results suggest that **moving the first gate from level 30 to level 40 may negatively affect long-term retention** without producing a statistically significant change in short-term retention or average gamerounds.
+
+The experiment does not establish why Day 7 retention decreased. Further analysis of player behavior or qualitative UX feedback could help investigate the underlying reasons.
 
 ---
 
 ### Strategic Insights
 
-* **Early friction (gate at level 30)** may support stronger habit formation
-* Removing or delaying progression constraints does not necessarily improve engagement
-* **Long-term retention** is more sensitive to game design changes than short-term behavior
+* Moving the first gate to level 40 was associated with lower Day 7 retention in this experiment.
+* Changes to game progression should be evaluated against **long-term retention**, not engagement metrics alone.
 
 ---
 
